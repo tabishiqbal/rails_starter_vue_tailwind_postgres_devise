@@ -1,4 +1,4 @@
-# README
+# Rails Starter (Vue, Tailwindcss, Postgres, Devise)
 
 The goal of this project is just to save time on the same several steps to set up this application configuration. If you ever want to start a rails app, fork/clone this repository instead of `rails new app` to save about an hour.
 
@@ -10,14 +10,14 @@ The goal of this project is just to save time on the same several steps to set u
 * Vue ^2.6.10
 
 ## Initial Setup
-We need to install all dependencies and create the database.
+Install all dependencies and create/migrate the database.
 
 1. Fork the repository
 2. Clone it to your local machine
 3. `cd` into the directory
 4. `bundle` (installs all gems)
 5. `yarn` (installs all packages)
-6. `rails db:create`
+6. `rails db:create && rails db:migrate`
 
 ## Running the App
 1. `rails s`
@@ -27,4 +27,7 @@ We need to install all dependencies and create the database.
 You are mostly starting from scratch with these tools besides for the basic installation, so there are very few assumptions or defaults if any.
 * See Tailwind Docs (https://tailwindcss.com)
 * See Vue Docs (https://vuejs.org)
+#### Devise
+* A User model was initialized with defaults.
+* Views were generated and modified to use Tailwind.
 * See Devise Docs (https://github.com/plataformatec/devise)
