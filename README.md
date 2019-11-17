@@ -1,6 +1,6 @@
 # Rails Starter (Vue, Tailwindcss, Postgres, Devise)
 
-The goal of this project is just to save time on the same several steps to set up this application configuration. If you ever want to start a rails app, fork/clone this repository instead of `rails new app` to save about an hour.
+There are a lot of starter templates for Rails apps, but I want one that is so minimal that I never have to delete anything to get started — only add to it. Most come with more than I need by default. To use, fork/clone this repository instead of `rails new app`.
 
 ## Relevant Versions Used (Modifiable)
 * Ruby 2.6.3
@@ -23,11 +23,18 @@ Install all dependencies and create/migrate the database.
 1. `rails s`
 2. Open new tab in Terminal and `bin/webpack-dev-server`
 
-## Other Notes/Considerations
+## Notes
 You are mostly starting from scratch with these tools besides for the basic installation, so there are very few assumptions or defaults if any.
+#### Tailwind
+* To modify defaults, see tailwind.config.js file.
+* To add custom styles I recommend creating organized files in app/javascript/css and importing the files into main.css.
 * See Tailwind Docs (https://tailwindcss.com)
+
+#### Vue
+* I added a sample component "App" to show basic organization and process for adding a component.
 * See Vue Docs (https://vuejs.org)
+
 #### Devise
 * A User model was initialized with defaults.
-* Views were generated and modified to use Tailwind.
+* Views were generated with no styling. There are some Tailwind Devise form ERB files online you can copy.
 * See Devise Docs (https://github.com/plataformatec/devise)
